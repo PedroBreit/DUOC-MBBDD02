@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="48E53BDF-8188-1502-112D-D1E083E182EA" name="ADMINISTRADOR">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:01:14 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="afp" id="E12FF330-0278-BF9E-AEDD-C2E5B3769FE0">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:01:22 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="h_extras" id="7E16A2DF-F978-CF25-AF2B-8369D680B115">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:01:40 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="95449862-4D1E-18CB-B795-87B07CD80279">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:33:21 UTC</createdTime>
+<generatorID>B65E7EC0-B0DF-64D9-1D9F-19B69434129A</generatorID>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<referedAttribute>7D4032BB-1CA4-846F-FA07-352761166A1B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="867C5F4A-7B06-6BAB-F788-8C558D434F20" name="ADMINISTRADOR PK">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:55:45 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95449862-4D1E-18CB-B795-87B07CD80279</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

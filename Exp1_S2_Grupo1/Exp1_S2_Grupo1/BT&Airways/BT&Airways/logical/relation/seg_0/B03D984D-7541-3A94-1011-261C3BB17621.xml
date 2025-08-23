@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="empleado_piloto" directorySegmentName="seg_0" id="B03D984D-7541-3A94-1011-261C3BB17621">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:45:51 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<sourcePk>D8EB2238-434C-D784-740E-3D7AD83CE2D5</sourcePk>
+<targetPk>82361389-112A-144A-9F82-10142AADB28F</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A3FC1A3E-A8DA-2ECF-C20D-9F9E2CF6C97E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3E8AF28F-76AE-18C2-E581-C6AE33F9FF16</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

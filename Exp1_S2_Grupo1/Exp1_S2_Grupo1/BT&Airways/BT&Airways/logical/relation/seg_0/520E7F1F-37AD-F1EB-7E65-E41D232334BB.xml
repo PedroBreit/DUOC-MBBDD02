@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="reserva_pasajero" directorySegmentName="seg_0" id="520E7F1F-37AD-F1EB-7E65-E41D232334BB">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-21 18:07:40 UTC</createdTime>
+<ownerDesignName>BT&amp;Airways</ownerDesignName>
+<engineerTo>
+<item key="5955DDBF-08CB-A6EE-3FD0-93042A9AD531" value="true"/>
+</engineerTo>
+<sourcePk>E3F497E2-058A-EBE6-EADE-A955E284D344</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>hace</nameOnSource>
+<nameOnTarget>hecha</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F92ACB6D-1328-9B3A-029F-593F4B745412</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6FBC20B1-521B-56BD-551F-1754B22781C7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
