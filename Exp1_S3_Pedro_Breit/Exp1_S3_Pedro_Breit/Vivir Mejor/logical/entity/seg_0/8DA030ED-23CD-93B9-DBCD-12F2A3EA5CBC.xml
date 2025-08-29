@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8DA030ED-23CD-93B9-DBCD-12F2A3EA5CBC" name="ANEXO">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 17:11:38 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_anexo" id="8548F00A-B889-2EC6-CE9F-1548D3F0EBB7">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:24:56 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="f_inicio" id="1835BA0E-EC2D-2BE5-2D49-CD47133A9311">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:25:30 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="f_termino" id="0250EDAF-FCA1-2DB3-D099-E9537A29FCC1">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:25:54 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observaciones" id="BA1DCB4F-2286-CCE1-03BA-43FFC2B6B07F">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:26:14 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_contrato" id="51F80130-4109-D1B1-BE9A-5F40C9FE0707">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:32:18 UTC</createdTime>
+<generatorID>963B5C5D-08A3-DEA5-56C8-D8F447261321</generatorID>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<referedAttribute>41FC8DD3-4111-7FC4-8DA4-67A3561AB32E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="7DF1A625-D2A1-253D-6422-65C74E637FC3">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:34:25 UTC</createdTime>
+<generatorID>C95ECA84-B642-F4F3-7F1D-FC8D7DCD4EFC</generatorID>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<referedAttribute>A6E4F11F-3AAA-BCE9-DB14-67F0E6D8A89B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0559FE83-3DA7-3B06-745B-B1EDC1FC7702" name="ANEXO PK">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:25:06 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8548F00A-B889-2EC6-CE9F-1548D3F0EBB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

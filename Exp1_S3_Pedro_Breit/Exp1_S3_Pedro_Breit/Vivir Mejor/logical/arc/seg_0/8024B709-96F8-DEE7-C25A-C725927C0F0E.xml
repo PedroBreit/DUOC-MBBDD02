@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="8024B709-96F8-DEE7-C25A-C725927C0F0E" name="Arc_6">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 17:31:10 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<entity>5DB81809-1758-E5F9-7297-E48E407E11A6</entity>
+<relations>
+<relationID>2467B441-80CA-B43A-463B-9E663B8614B7</relationID>
+<relationID>1C5B5FE2-08B9-FA7F-8ACB-2F4BB50FECC3</relationID>
+</relations>
+</Arc>

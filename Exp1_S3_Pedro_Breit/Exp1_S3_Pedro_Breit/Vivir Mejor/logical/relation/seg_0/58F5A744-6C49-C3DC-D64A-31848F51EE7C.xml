@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_12" directorySegmentName="seg_0" id="58F5A744-6C49-C3DC-D64A-31848F51EE7C">
+<createdBy>pedro</createdBy>
+<createdTime>2025-08-27 18:08:00 UTC</createdTime>
+<ownerDesignName>Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DE993D96-D06E-91BE-372E-3BFBED329D6F" value="true"/>
+</engineerTo>
+<sourcePk>33A9BD0F-E86D-FA64-7FBE-0B7FF74919F2</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tener</nameOnSource>
+<nameOnTarget>pertenece</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D866080A-6DBB-C9DB-7538-D135A9F40D81</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>619B55C5-4A35-4C48-6D99-BF59630D53FB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
