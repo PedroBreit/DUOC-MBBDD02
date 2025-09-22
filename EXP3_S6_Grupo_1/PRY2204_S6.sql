@@ -131,12 +131,13 @@ CREATE TABLE receta_detalle (
 /* ===================== PAGOS ===================== */
 /* Pago asociado a receta. . */
 CREATE TABLE pago (
-  id_pago NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  id_receta NUMBER NOT NULL,
-  monto_pagado NUMBER NOT NULL CHECK (monto_pagado > 0),
-  fecha_pago DATE NOT NULL,
-  CONSTRAINT fk_pago_receta
-    FOREIGN KEY (id_receta) REFERENCES receta(id_receta)
+    id_pago NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id_receta NUMBER NOT NULL,
+    monto_pagado NUMBER NOT NULL CHECK (monto_pagado > 0),
+    fecha_pago DATE NOT NULL,
+    
+    CONSTRAINT fk_pago_receta
+        FOREIGN KEY (id_receta) REFERENCES receta(id_receta)
 );
 
 
@@ -162,26 +163,26 @@ CREATE TABLE pago (
 
 /* 1) MEDICAMENTO: precio unitario dentro de rango 1.000 a 2.000.000 */
 ALTER TABLE medicamento
-  ADD (precio NUMBER NOT NULL);
+    ADD (precio NUMBER NOT NULL);
 
 ALTER TABLE medicamento
-  ADD CONSTRAINT ck_medicamento_precio_rango
-  CHECK (precio BETWEEN 1000 AND 2000000);
+    ADD CONSTRAINT ck_medicamento_precio_rango
+    CHECK (precio BETWEEN 1000 AND 2000000);
 
 /* 2) PAGO: método de pago restringido a los valores indicados */
 ALTER TABLE pago
-  ADD (metodo_pago VARCHAR2(15) NOT NULL);
+    ADD (metodo_pago VARCHAR2(15) NOT NULL);
 
 ALTER TABLE pago
-  ADD CONSTRAINT ck_pago_metodo_pago
-  CHECK (UPPER(metodo_pago) IN ('EFECTIVO','TARJETA','TRANSFERENCIA'));
+    ADD CONSTRAINT ck_pago_metodo_pago
+    CHECK (UPPER(metodo_pago) IN ('EFECTIVO','TARJETA','TRANSFERENCIA'));
 
 /* 3) PACIENTE: reemplazar EDAD por FECHA_NACIMIENTO */
 ALTER TABLE paciente
-  DROP COLUMN edad;
+    DROP COLUMN edad;
 
 ALTER TABLE paciente
-  ADD (fecha_nacimiento DATE);
+    ADD (fecha_nacimiento DATE);
 
 /* ===================== COMENTARIOS ===================== */
 /*
